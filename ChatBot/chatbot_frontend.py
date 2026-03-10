@@ -26,7 +26,7 @@ if user_input:
     
     # Gravince Side Handling
     with st.spinner("Thinking...", show_time=True):
-        response = workflow.invoke({'messages': [HumanMessage(content=user_input)]}, config=CONFIG) # pyright: ignore[reportArgumentType]
+        response = workflow.invoke({'messages': [HumanMessage(content=user_input)]}, config=CONFIG)
     gravince = response['messages'][-1].content
 
     st.session_state.messages.append({"role": "assistant", "content": gravince})
