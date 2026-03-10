@@ -4,7 +4,7 @@ from langgraph.graph import StateGraph, START, END
 from langchain_core.messages import HumanMessage, SystemMessage, BaseMessage
 from langgraph.checkpoint.memory import MemorySaver
 
-model = ChatOllama(model="deepseek-r1:8b", disable_streaming=False)
+model = ChatOllama(model="llama3.1:8b", disable_streaming=False)
 
 from langgraph.graph.message import add_messages
 
