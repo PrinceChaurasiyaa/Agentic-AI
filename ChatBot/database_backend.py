@@ -6,6 +6,10 @@ from langgraph.checkpoint.sqlite import SqliteSaver
 import sqlite3
 from datetime import datetime
 
+from dotenv import load_dotenv
+
+load_dotenv()
+
 model = ChatOllama(model="llama3.1:8b", disable_streaming=False)
 
 from langgraph.graph.message import add_messages

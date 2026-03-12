@@ -32,8 +32,8 @@ def chat_label():
     return formated_time
 
 # ===================================== Header UI =====================================================
-st.title("GRAV!NCE", text_alignment="center")
-st.markdown("Your Friendly Chatbot", text_alignment="center")
+st.title("GRAV!NCE")
+st.markdown("Your Friendly Chatbot")
 
 # ===================================== Session State ===============================================
 if 'messages' not in st.session_state:
