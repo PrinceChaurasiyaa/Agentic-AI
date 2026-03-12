@@ -3,3 +3,4 @@ testingAgenticAI.py
 *.db
 *.db-shm
 *.db-wal
+LangSmith/.indices
